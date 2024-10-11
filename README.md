@@ -112,3 +112,25 @@ Replace `us-east-1` with the region you used in Step 1
 <div align="center">
   <img src="screenshot/6.PNG" width=""/>
 </div>
+
+---
+
+## Step 7: Clean Up Resources
+#### Remove S3 Bucket Policy:
+```bash
+aws s3api delete-bucket-policy --bucket mybucket
+```
+#### Delete All Objects from S3 Bucket:
+```bash
+aws s3 rm s3://mybucket --recursive
+```
+#### Delete S3 Bucket:
+```bash
+aws s3api delete-bucket --bucket mybucket
+```
+
+- Replace `mybucket` with your bucket name.
+
+<div align="center">
+  <img src="screenshot/7.PNG" width=""/>
+</div>
