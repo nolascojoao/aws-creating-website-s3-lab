@@ -19,6 +19,10 @@ aws s3api create-bucket --bucket mybucket
 ```
 Replace `mybucket` with your desired bucket name. The bucket name must be globally unique.
 
+<div align="center">
+  <img src="screenshot/1.PNG" width=""/>
+</div>
+
 ---
 
 ## Step 2: Enable static website hosting for the bucket
@@ -27,9 +31,19 @@ aws s3 website s3://mybucket/ --index-document index.html --error-document error
 ```
 Replace `mybucket` with your bucket name.
 
+
+<div align="center">
+  <img src="screenshot/2.PNG" width=""/>
+</div>
+
 ---
 
 ## Step 3: Create a simple index.html file
+
+<div align="center">
+  <img src="screenshot/3.0.PNG" width=""/>
+</div>
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -42,6 +56,10 @@ Replace `mybucket` with your bucket name.
 </html>
 ```
 
+<div align="center">
+  <img src="screenshot/3.1.PNG" width=""/>
+</div>
+
 ---
 
 ## Step 4: Upload the index.html file to S3
@@ -50,9 +68,19 @@ aws s3 cp index.html s3://mybucket/
 ```
 Replace `mybucket` with your bucket name.
 
+
+<div align="center">
+  <img src="screenshot/4.PNG" width=""/>
+</div>
+
 ---
 
 ## Step 5: Configure bucket policy for public access
+```bash
+aws s3api put-public-access-block \
+  --bucket <bucket-name> \
+  --public-access-block-configuration BlockPublicAcls=false,IgnorePublicAcls=false
+```
 ```bash
 aws s3api put-bucket-policy --bucket mybucket --policy '{
     "Version": "2012-10-17",
@@ -68,6 +96,10 @@ aws s3api put-bucket-policy --bucket mybucket --policy '{
 ```
 Replace `mybucket` with your bucket name.
 
+<div align="center">
+  <img src="screenshot/5.PNG" width=""/>
+</div>
+
 ---
 
 ## Step 6: Access the website
@@ -76,3 +108,7 @@ http://mybucket.s3-website-us-east-1.amazonaws.com
 ```
 Replace `mybucket` with your bucket name.
 Replace `us-east-1` with the region you used in Step 1
+
+<div align="center">
+  <img src="screenshot/6.PNG" width=""/>
+</div>
