@@ -7,6 +7,8 @@
 ## Overview
 Host a static website on S3 by creating and configuring an S3 bucket for public access.
 
+![Click here](/scripts) to access the automated version with shell scripts.
+
 ---
 ⚠️ **Attention:**
 - All the tasks will be completed via the command line using AWS CLI. Ensure you have the necessary permissions. [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
