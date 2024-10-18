@@ -52,10 +52,6 @@ Replace `us-east-1` with the region you used in Step 1
   <img src="screenshot/T1.PNG" width=""/>
 </div>
 
-<div align="center">
-  <img src="screenshot/T2.PNG" width=""/>
-</div>
-
 
 
 
