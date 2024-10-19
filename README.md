@@ -1,4 +1,4 @@
-# AWS Creating a Website on S3
+# AWS Hosting a Website on S3
 
 <div align="center">
   <img src="screenshot/architecture.png" width=""/>
