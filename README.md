@@ -1,4 +1,4 @@
-# AWS Hosting a Website on S3
+# AWS S3 Hosting a Website 
 
 <div align="center">
   <img src="screenshot/architecture.png" width=""/>
@@ -45,6 +45,10 @@ Replace `mybucket` with your bucket name.
   <img src="screenshot/3.0.PNG" width=""/>
 </div>
 
+<div align="center">
+  <img src="screenshot/3.1.PNG" width=""/>
+</div>
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -56,10 +60,6 @@ Replace `mybucket` with your bucket name.
 </body>
 </html>
 ```
-
-<div align="center">
-  <img src="screenshot/3.1.PNG" width=""/>
-</div>
 
 ---
 
